@@ -10,6 +10,7 @@ import { ICity } from "../../models/city.model";
 export class CitiesListComponent implements OnInit{
 
     cities: ICity[];
+    dataFields = [ "Name", "Description","Delete"];
     constructor() {}
 
     ngOnInit(): void {
