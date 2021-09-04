@@ -5,4 +5,13 @@ import { ICity } from "../../models/city.model";
 @Injectable()
 export class CitiesService {
     constructor(private _citiesEndpoint: CitiesEndpoint) {}
+    getCities(){
+        return this._citiesEndpoint.getCities();
+    }
+    deleteCity(id: number){
+        return this._citiesEndpoint.deleteCity(id);
+    }
+    getCity(id: number) {
+        return this._citiesEndpoint.getCity(id);
+    }
 }
