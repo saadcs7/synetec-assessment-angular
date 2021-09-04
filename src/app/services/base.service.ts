@@ -6,8 +6,11 @@ import { environment } from "../../environments/environment";
 export class BaseService {
     
     private _baseUrl: string = environment.apiBaseUrl;
+    protected _httpClient: HttpClient ;
 
-    constructor(httpClient: HttpClient, _injector: Injector){}
+    constructor(httpClient: HttpClient, _injector: Injector){
+        this._httpClient=httpClient;
+    }
 
     protected getRequestHeaders(): { headers: HttpHeaders | { [header: string]: string | string[]; } } {
         let headers = new HttpHeaders({
@@ -16,11 +19,12 @@ export class BaseService {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'GET'
         });
-
         return { headers: headers };
     }
-
-    protected getBaseUrl() : string {
+    get BaseUrl() : string {
         return this._baseUrl;
+    }
+    get Http(): HttpClient {
+        return this._httpClient;
     }
 }
