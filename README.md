@@ -47,10 +47,3 @@ Please complete as many as possible of the tasks listed below
 3. The backend engineers have developed an API that provides you with a list of cities, implement the method in the service that will get all the cities and fetch the result in the cities list of the component
 4. The delete button doesn't do anything, implement that feature
 
-## Saad Comment
-
-All the above tasks had been completed.
-
-I did an extra task (adding sorting feature to city table)
-
-Thank you
