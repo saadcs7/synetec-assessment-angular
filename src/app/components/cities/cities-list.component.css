@@ -1,3 +1,32 @@
+/* also we can add fontAwesome for offline usage with the command " npm install font-awesome --save " */
+@font-face {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style : normal;
+           src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
+           src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4..0") format("embedded-opentype"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
+                 url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+}
+.fa-trash:after {
+    font-family: FontAwesome;
+    content: "\f1f8";
+    font-style: normal!important;
+}
+.SORT:after {
+    font-family: FontAwesome;
+    content: "\f0dc";
+}
+.ASC:after {
+    font-family: FontAwesome;
+    content: "\f0dd";
+}
+.DESC:after {
+    font-family: FontAwesome;
+    content: "\f0de";
+}
 .row{
     margin-top:40px;
     padding: 0 10px;
@@ -5,7 +34,6 @@
 .clickable{
     cursor: pointer;   
 }
-
 .panel-heading div {
     margin-top: -18px;
     font-size: 15px;
